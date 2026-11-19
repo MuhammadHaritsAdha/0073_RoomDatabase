@@ -37,3 +37,10 @@ class DetailViewModel (
     }
 }
 
+/**
+ * UI State for ItemDetailScreen
+ */
+
+data class DetailSiswaUiState(
+    val detailSiswa: DetailSiswa = DetailSiswa()
+)
