@@ -65,6 +65,11 @@ fun Siswa.uiStateSiswa(isEntryValid: Boolean = false): UIStateSiswa = UIStateSis
     isEntryValid = isEntryValid
 )
 
+fun Siswa.toUiStateSiswa(isEntryValid: Boolean = false): UIStateSiswa = UIStateSiswa(
+    detailSiswa = this.toDetailSiswa(),
+    isEntryValid = isEntryValid
+)
+
 fun Siswa.toDetailSiswa(): DetailSiswa = DetailSiswa(
     id = id,
     nama = nama,
