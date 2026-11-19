@@ -27,5 +27,10 @@ class DetailViewModel (
                 started = SharingStarted.WhileSubscribed(TIMEOUT_MILLIS),
                 initialValue = DetailSiswaUiState()
             )
+
+    suspend fun deleteSiswa() {
+        repositoriSiswa.deleteSiswa(uiDetailState.value.detailSiswa.toSiswa())
+    }
 }
+
 
